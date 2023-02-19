@@ -16,7 +16,7 @@ public static class EnterPlayModeSceneChange
             Debug.LogWarning("There is no LoadingScene or not found!");
             
             EditorSceneManager.playModeStartScene =
-                AssetDatabase.LoadAssetAtPath<SceneAsset>(EditorSceneManager.GetActiveScene().name);
+                AssetDatabase.LoadAssetAtPath<SceneAsset>(EditorSceneManager.GetActiveScene().path);
             
             return;
         }
