@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using PathCreation;
 using UnityEditor;
 using UnityEngine;
+using Extensions;
 
 public class PathManager : MonoBehaviour
 {
@@ -58,7 +59,7 @@ public class PathManager : MonoBehaviour
             PathPoints.Add(child);
         }*/
         
-        ListUtils.FillListByParent(PathPoints, pathPointsParent);
+        PathPoints.FillListByParent(pathPointsParent);
     }
     
     
